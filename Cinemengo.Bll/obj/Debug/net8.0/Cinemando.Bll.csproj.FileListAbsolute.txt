@@ -1,5 +1,0 @@
-C:\Users\szant\source\AspKepzes\Cinemango\Cinemengo.Bll\obj\Debug\net8.0\Cinemando.Bll.csproj.AssemblyReference.cache
-C:\Users\szant\source\AspKepzes\Cinemango\Cinemengo.Bll\obj\Debug\net8.0\Cinemando.Bll.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\szant\source\AspKepzes\Cinemango\Cinemengo.Bll\obj\Debug\net8.0\Cinemando.Bll.AssemblyInfoInputs.cache
-C:\Users\szant\source\AspKepzes\Cinemango\Cinemengo.Bll\obj\Debug\net8.0\Cinemando.Bll.AssemblyInfo.cs
-C:\Users\szant\source\AspKepzes\Cinemango\Cinemengo.Bll\obj\Debug\net8.0\Cinemando.Bll.csproj.CoreCompileInputs.cache
