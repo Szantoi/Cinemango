@@ -17,7 +17,7 @@ namespace Cinemango.Data.Entitis
         public int FilmId { get; set; }
         public Film Film { get; set; }
 
-        public int TermeId { get; set; }
+        public int TeremId { get; set; }
         public Terem Terem { get; set; }
 
         public ICollection<Jegy> Jegyek { get; set; }
@@ -27,7 +27,7 @@ namespace Cinemango.Data.Entitis
             builder.HasOne(vetites => vetites.Film).WithMany(film => film.Vetitesek)
                 .HasForeignKey(vetites => vetites.FilmId).HasPrincipalKey(film => film.Id);
             builder.HasOne(vetites => vetites.Terem).WithMany(terem => terem.Vetitesek)
-                .HasForeignKey(vetites=>vetites.Terem).HasPrincipalKey(terem => terem.Id);
+                .HasForeignKey(vetites=>vetites.TeremId).HasPrincipalKey(terem => terem.Id);
         }
     }
 }

@@ -1,4 +1,6 @@
+using Cinemando.Bll;
 using Cinemango.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cinemango.Web
 {
@@ -11,7 +13,10 @@ namespace Cinemango.Web
             // Add services to the container.
             builder.Services.AddRazorPages();
 
-            //builder.Services.AddDbContext<MoziDbContext>(opt)
+            string? configurationString = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build().GetConnectionString("CinemangoDB");
+            builder.Services.AddDbContext<MoziDbContext>(options => options.UseSqlServer(configurationString));
+
+            builder.Services.AddScoped<MoziService>();
 
             var app = builder.Build();
 

@@ -25,7 +25,6 @@ namespace Cinemango.Data.Entitis
 
         public void Configure(EntityTypeBuilder<Film> builder)
         {
-            throw new NotImplementedException();
         }
     }
 }
