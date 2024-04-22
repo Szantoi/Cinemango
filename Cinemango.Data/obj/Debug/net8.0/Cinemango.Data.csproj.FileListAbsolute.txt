@@ -1,0 +1,14 @@
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\bin\Debug\net8.0\Cinemango.Data.deps.json
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\bin\Debug\net8.0\Cinemango.Data.runtimeconfig.json
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\bin\Debug\net8.0\Cinemango.Data.dll
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\bin\Debug\net8.0\Cinemango.Data.pdb
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\Cinemango.Data.csproj.AssemblyReference.cache
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\Cinemango.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\Cinemango.Data.AssemblyInfoInputs.cache
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\Cinemango.Data.AssemblyInfo.cs
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\Cinemango.Data.csproj.CoreCompileInputs.cache
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\Cinemango.Data.dll
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\refint\Cinemango.Data.dll
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\Cinemango.Data.pdb
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\Cinemango.Data.genruntimeconfig.cache
+C:\Users\szant\source\AspKepzes\Cinemango\Cinemango.Data\obj\Debug\net8.0\ref\Cinemango.Data.dll
