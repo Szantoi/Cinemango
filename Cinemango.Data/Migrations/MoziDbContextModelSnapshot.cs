@@ -37,7 +37,7 @@ namespace Cinemango.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Felhasznalo");
+                    b.ToTable("Felhasznalok");
                 });
 
             modelBuilder.Entity("Cinemango.Data.Entitis.Film", b =>
@@ -75,7 +75,7 @@ namespace Cinemango.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Film");
+                    b.ToTable("Filmek");
                 });
 
             modelBuilder.Entity("Cinemango.Data.Entitis.Jegy", b =>
@@ -113,7 +113,7 @@ namespace Cinemango.Data.Migrations
                         .IsUnique()
                         .HasFilter("[VasarlasId] IS NOT NULL");
 
-                    b.ToTable("Jegy");
+                    b.ToTable("Jegyek");
                 });
 
             modelBuilder.Entity("Cinemango.Data.Entitis.JegyTipus", b =>
@@ -137,7 +137,7 @@ namespace Cinemango.Data.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("JegyTipus");
+                    b.ToTable("JegyTipusok");
                 });
 
             modelBuilder.Entity("Cinemango.Data.Entitis.Terem", b =>
@@ -158,7 +158,7 @@ namespace Cinemango.Data.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Terem");
+                    b.ToTable("Termek");
                 });
 
             modelBuilder.Entity("Cinemango.Data.Entitis.Ulohely", b =>
@@ -185,7 +185,7 @@ namespace Cinemango.Data.Migrations
 
                     b.HasIndex("TeremId", "Oldal", "Sor", "Szek");
 
-                    b.ToTable("Ulohely");
+                    b.ToTable("Ulohelyek");
                 });
 
             modelBuilder.Entity("Cinemango.Data.Entitis.Vasarlas", b =>
@@ -206,7 +206,7 @@ namespace Cinemango.Data.Migrations
 
                     b.HasIndex("FelhasznaloId");
 
-                    b.ToTable("Vasarlas");
+                    b.ToTable("Vasarlasok");
                 });
 
             modelBuilder.Entity("Cinemango.Data.Entitis.Vetites", b =>
@@ -235,29 +235,31 @@ namespace Cinemango.Data.Migrations
 
                     b.HasIndex("TeremId");
 
-                    b.ToTable("Vetites");
+                    b.ToTable("Vetitesek");
                 });
 
             modelBuilder.Entity("Cinemango.Data.Entitis.Jegy", b =>
                 {
                     b.HasOne("Cinemango.Data.Entitis.JegyTipus", "Tipus")
                         .WithMany("Jegyek")
-                        .HasForeignKey("TipusId");
+                        .HasForeignKey("TipusId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Cinemango.Data.Entitis.Ulohely", "Ulohely")
                         .WithMany("Jegyek")
                         .HasForeignKey("UlohelyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Cinemango.Data.Entitis.Vasarlas", "Vasarlas")
                         .WithMany("Jegyek")
-                        .HasForeignKey("VasarlasId");
+                        .HasForeignKey("VasarlasId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Cinemango.Data.Entitis.Vetites", "Vetites")
                         .WithMany("Jegyek")
                         .HasForeignKey("VetitesId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Tipus");

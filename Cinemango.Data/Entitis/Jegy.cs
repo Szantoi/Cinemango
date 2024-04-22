@@ -24,17 +24,22 @@ namespace Cinemango.Data.Entitis
         {
             builder.HasIndex(jegy => new { jegy.UlohelyId, jegy.VasarlasId }).IsUnique();
 
+
             builder.HasOne(jegy => jegy.Tipus).WithMany(jegyTipus => jegyTipus.Jegyek)
-                .HasForeignKey(jegy => jegy.TipusId).HasPrincipalKey(jegyTipus => jegyTipus.Id);
+                .HasForeignKey(jegy => jegy.TipusId).HasPrincipalKey(jegyTipus => jegyTipus.Id)
+                .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(jegy => jegy.Ulohely).WithMany(ulohely => ulohely.Jegyek)
-                .HasForeignKey(jegy => jegy.UlohelyId).HasPrincipalKey(ulohely => ulohely.Id);
+                .HasForeignKey(jegy => jegy.UlohelyId).HasPrincipalKey(ulohely => ulohely.Id)
+                .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(jegy => jegy.Vasarlas).WithMany(vasarlas => vasarlas.Jegyek)
-                .HasForeignKey(jegy => jegy.VasarlasId).HasPrincipalKey(vasarlas => vasarlas.Id);
+                .HasForeignKey(jegy => jegy.VasarlasId).HasPrincipalKey(vasarlas => vasarlas.Id)
+                .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(jegy => jegy.Vetites).WithMany(vetites => vetites.Jegyek)
-                .HasForeignKey(jegy => jegy.VetitesId).HasPrincipalKey(vetites => vetites.Id);
+                .HasForeignKey(jegy => jegy.VetitesId).HasPrincipalKey(vetites => vetites.Id)
+                .OnDelete(DeleteBehavior.Restrict);
 
         }
     }

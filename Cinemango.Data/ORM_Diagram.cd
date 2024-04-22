@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Cinemango.Data.Entitis.Felhasznalo" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="10.25" Width="1.5" />
+    <AssociationLine Name="Vasarlasoks" Type="Cinemango.Data.Entitis.Vasarlas">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.111" Y="-2.391" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entitis\Felhasznalo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Vasarlasoks" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cinemango.Data.Entitis.Film" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="11.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BCASAAAAQAAAEAAABABAAAABAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entitis\Film.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Vetitesek" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cinemango.Data.Entitis.Jegy" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <AssociationLine Name="Ulohely" Type="Cinemango.Data.Entitis.Ulohely" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.625" Y="7.5" />
+        <Point X="14.625" Y="7.234" />
+        <Point X="15.145" Y="7.234" />
+        <Point X="15.145" Y="5.056" />
+        <Point X="19" Y="5.056" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Vetites" Type="Cinemango.Data.Entitis.Vetites" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="8.271" />
+        <Point X="13.052" Y="8.271" />
+        <Point X="13.052" Y="11.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACBAAAAAAAAAAAAABBAAAQAABgAIAAAgAAAAgACAA=</HashCode>
+      <FileName>Entitis\Jegy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tipus" />
+      <Property Name="Ulohely" />
+      <Property Name="Vasarlas" />
+      <Property Name="Vetites" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cinemango.Data.Entitis.JegyTipus" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAABAAAQAAAAAAIAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entitis\JegyTipus.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Jegyek" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cinemango.Data.Entitis.Terem" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAAAAQAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entitis\Terem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Vetitesek" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Ulohelyek" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cinemango.Data.Entitis.Ulohely" BaseTypeListCollapsed="true">
+    <Position X="19" Y="4.75" Width="1.5" />
+    <AssociationLine Name="Jegyek" Type="Cinemango.Data.Entitis.Jegy" ManuallyRouted="true">
+      <Path>
+        <Point X="19" Y="5.778" />
+        <Point X="15.228" Y="5.778" Type="JumpStart" />
+        <Point X="15.062" Y="5.778" Type="JumpEnd" />
+        <Point X="14.5" Y="5.778" />
+        <Point X="14.5" Y="7.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAABAAAAAAAAAASAAEIACAQAAAAA=</HashCode>
+      <FileName>Entitis\Ulohely.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Oldal" />
+      <Property Name="Terem" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Jegyek" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cinemango.Data.Entitis.Vasarlas" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAABAAAAAAAACAAAAAIAAIgAAAAA=</HashCode>
+      <FileName>Entitis\Vasarlas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Felhasznalo" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Jegyek" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cinemango.Data.Entitis.Vetites" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="11.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAAAAAABAAAAAAAAABCAAAoACAgAAAAA=</HashCode>
+      <FileName>Entitis\Vetites.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tipus" />
+      <Property Name="Terem" />
+      <Property Name="Film" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Jegyek" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;" Collapsed="true">
+    <Position X="25.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Cinemango.Data.UlohelyOldal" Collapsed="true">
+    <Position X="23" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UlohelyOldal.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Cinemango.Data.VetitesTipus" Collapsed="true">
+    <Position X="15.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAIAiAAAAAAAAABCAAAAA=</HashCode>
+      <FileName>VetitesTipus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

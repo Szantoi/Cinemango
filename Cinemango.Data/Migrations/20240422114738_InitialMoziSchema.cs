@@ -159,24 +159,26 @@ namespace Cinemango.Data.Migrations
                         name: "FK_Jegy_JegyTipus_TipusId",
                         column: x => x.TipusId,
                         principalTable: "JegyTipus",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Jegy_Ulohely_UlohelyId",
                         column: x => x.UlohelyId,
                         principalTable: "Ulohely",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Jegy_Vasarlas_VasarlasId",
                         column: x => x.VasarlasId,
                         principalTable: "Vasarlas",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Jegy_Vetites_VetitesId",
                         column: x => x.VetitesId,
                         principalTable: "Vetites",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

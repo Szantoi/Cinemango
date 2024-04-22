@@ -1,0 +1,16 @@
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\bin\Debug\net8.0\Cinemando.Bll.deps.json
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\bin\Debug\net8.0\Cinemando.Bll.dll
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\bin\Debug\net8.0\Cinemando.Bll.pdb
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\bin\Debug\net8.0\Cinemango.Data.dll
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\bin\Debug\net8.0\Cinemango.Data.pdb
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemando.Bll.csproj.AssemblyReference.cache
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemando.Bll.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemando.Bll.AssemblyInfoInputs.cache
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemando.Bll.AssemblyInfo.cs
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemando.Bll.csproj.CoreCompileInputs.cache
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemando.Bll.sourcelink.json
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemand.13B3349E.Up2Date
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemando.Bll.dll
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\refint\Cinemando.Bll.dll
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\Cinemando.Bll.pdb
+C:\Users\szant\OneDrive - Eotvos Lorand Tudomanyegyetem\Dokumentumok\GitHab\Cinemango\Cinemango.Bll\obj\Debug\net8.0\ref\Cinemando.Bll.dll

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cinemango.Data.Migrations
 {
     [DbContext(typeof(MoziDbContext))]
-    [Migration("20240422095846_InitialMoziSchema")]
+    [Migration("20240422114738_InitialMoziSchema")]
     partial class InitialMoziSchema
     {
         /// <inheritdoc />
@@ -245,22 +245,24 @@ namespace Cinemango.Data.Migrations
                 {
                     b.HasOne("Cinemango.Data.Entitis.JegyTipus", "Tipus")
                         .WithMany("Jegyek")
-                        .HasForeignKey("TipusId");
+                        .HasForeignKey("TipusId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Cinemango.Data.Entitis.Ulohely", "Ulohely")
                         .WithMany("Jegyek")
                         .HasForeignKey("UlohelyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Cinemango.Data.Entitis.Vasarlas", "Vasarlas")
                         .WithMany("Jegyek")
-                        .HasForeignKey("VasarlasId");
+                        .HasForeignKey("VasarlasId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Cinemango.Data.Entitis.Vetites", "Vetites")
                         .WithMany("Jegyek")
                         .HasForeignKey("VetitesId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Tipus");
